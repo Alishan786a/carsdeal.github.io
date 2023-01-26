@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --darkblue: rgb(4, 4, 87);
+}
+#main_reservation{
+    min-height: 1180px;
+    position: relative;
+    /* background-color: rgb(171, 212, 56); */
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+}
+#main_sec1{
+    min-height: 930px;
+    /* background-color: red; */
+}
+#main_sec1 > div >.steps{
+    height: 80px;
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    position: relative;
+
+}
+.steps>div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.steps>div:nth-of-type(1){
+    background-color: gray;
+    height: 20px;
+    width: 99%;
+    margin: 30px 0.5% 0 0.5%;
+}
+.steps>div:nth-of-type(2){
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.steps>div:nth-of-type(2) >div{
+    height: 100%;
+    width: 80px;
+    background-color: gray;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.steps>div:nth-of-type(2) >div>div{
+
+    height: 66px;
+    width: 66px;
+    text-align: center;
+    line-height: 56px;
+    border: 5px solid rgb(56, 56, 219);
+
+    font-size: 20px;
+    color: white;
+    border-radius: 100%;
+}
+.steps>div:nth-of-type(2) >div:nth-of-type(1) >div{
+    background-color: var(--darkblue);
+    border: 5px solid rgb(56, 56, 219);
+
+
+}
+.steps_text{
+    height: 50px;
+    width: 86%;
+    margin: auto;
+    color: gray;
+    /* background-color: aqua; */
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.steps_text >div:nth-of-type(1){
+    color: var(--darkblue);
+}
+
+
+
+
+/* main sec2 */
+#main_sec2{
+    min-height: 720px;
+    /* background-color: chocolate; */
+}
+#main_sec2 >.pickup_locat{
+min-height: 350px;
+width: 100%;
+background-color: white;
+}
+/* .pickup_locat:nth-of-type(1){
+    background-color: red;
+
+} */
+.pickup_locat:nth-of-type(2){
+    margin-top: 20px;
+    /* background-color: rgb(38, 77, 185); */
+    
+}
+.pickup_locat>div:nth-of-type(1){
+    width: 100%;
+    height: 40px;
+    color: white;
+    padding-top: 12px;
+    background-color: gray;
+    text-align: center;
+}
+.pickup_locat>div:nth-of-type(2){
+
+
+    width: 100%;
+    min-height: 310px;
+    /* background-color: green; */
+    display: flex;
+
+}
+.pickup_locat_img{
+    width: 40%;
+    /* background-color: aqua; */
+}
+.pickup_locat_img img{
+    height: 100%;
+    width: 100%;
+}
+ .pickup_locat_form{
+    width: 60%;
+    /* background-color: blueviolet; */
+}
+/* .pickup_locat_form >div{
+
+ background-color: red;
+} */
+.location_form{
+    height: 40%;
+    /* background-color: cornflowerblue; */
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+.location_form>div{
+  display: inline;
+}
+.location_form>div input{
+    padding-left: 8px;
+    height: 35px;
+    width: 260px;
+  }
+  .location_form_info{
+    height: 58%;
+    background-color: var(--darkblue);
+  }
+  .location_form_info_head{
+    
+    width: 100%;
+    /* background-color: gold; */
+    background-color: transparent;
+    color: white;
+    font-size: 600;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .location_form_info_body{
+    height: 80%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+  }
+  .location_form_info_body>div{
+    padding: 25px 0;
+    width: 40%;
+    height: 40%;
+    display: inline;
+  }
+  .location_form_info_body>div p,i{
+ 
+    display: inline;
+  }
+  .location_form_info_body>div i{
+   height: 20px;
+   width: 20px;
+ 
+  }
+  .location_form_info_body>div:nth-child(odd){
+  text-align: right;
+  } 
+  .location_form_info_body>div:nth-of-type(1){
+    height: 40%;
+    width: 40%;
+    padding: 0;
+    margin-top: 12px;
+    /* background-color: aqua; */
+    display: flex;
+  }
+  .location_form_info_body>div:nth-of-type(1)> div:nth-of-type(1){
+ 
+ width: 90%;
+ height: 100%;
+ padding-top: 10px;
+ /* background-color: palegreen; */
+  }
+  .location_form_info_body>div:nth-of-type(1)> div:nth-of-type(2){
+ 
+    width: 10%;
+    height: 100%;
+    padding-top:10%;
+    /* background-color: brown; */
+     }
+  
+/* button styling */
+#nextstep{
+    text-align: center;
+    margin: 25px 0;
+}
+#nextstep_btn{
+    padding: 10px;
+    color: white;
+    border: none;
+    background-color: var(--darkblue);
+}
+
+
+
+
+/* media query */
+@media screen and (max-width: 620px) {
+    #main_sec1 > div >.steps{
+        width: 100% !important;
+    }
+    .steps_text{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #main_sec1 > div >.steps{
+        height:60px !important;
+    }
+    .steps>div:nth-of-type(1){
+        height: 12px;
+        margin: 24px 0.5% 0 0.5%;
+
+    }
+    .steps>div:nth-of-type(2) >div{
+        width: 60px;
+    }
+    .steps>div:nth-of-type(2) >div>div{
+
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 44px;
+        border: 3px solid rgb(56, 56, 219);
+    }
+    .steps>div:nth-of-type(2) >div:nth-of-type(1) >div{
+        
+        border: 3px solid rgb(56, 56, 219);
+    
+    
+    }
+}
+
+
+@media screen and (max-width: 398px) {
+    #main_reservation{
+        width: 97% !important;
+    }
+    #pickup_locat_img{
+     width: 100% !important;
+    }
+    .location_form>div{
+        display: block;
+      }
+}
+@media screen and (max-width: 1230px) {
+
+    .pickup_locat>div:nth-of-type(2){
+flex-direction: column;
+align-items: center;
+    }
+    .pickup_locat>div:nth-of-type(2) >div{
+        width: 80%;
+    }
+    .location_form >div{
+       margin: 14px 0;
+    }
+
+}
+
+
+    @media screen and (max-width: 920px) {
+        .location_form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+    }
+
+    
+    @media screen and (max-width: 481px) {
+        .pickup_locat_form{
+            width: 100% !important;
+         }
+    }
+
+    @media screen and (max-width: 336px){
+        .location_form>div input{
+            width: 210px !important;
+        }
+    }
+    @media screen and (max-width: 514px){
+        .location_form_info_body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .location_form_info_body >div{
+          text-align: center;
+          /* display: inline; */
+         width: 90% !important;
+         display: flex;
+         justify-content: center;
+        }
+        .location_form_info_body >div p,i{
+            text-align: center;
+        }
+        
+    }
